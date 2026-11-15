@@ -203,6 +203,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "dfdb5ad8-01a1-1000-7d90-1bddc2f1bc39",
+        "name" : "Déposer Japan dans MinIO",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "5fb1b51e-eb33-3cdd-88ea-0357db0784cd",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "d0080e0d-fa16-3059-b9c4-4e40dab52e4a",
+        "name" : "Clé objet Japan",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 10
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "199f2a4b-e8f3-3c16-849f-abb5c9f896c1",
         "name" : "Calculer les attributs",
         "type" : "PROCESSOR"
@@ -379,6 +409,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "d0080e0d-fa16-3059-b9c4-4e40dab52e4a",
+        "name" : "Clé objet Japan",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "a19bdc85-a346-3276-9fad-d9f90c3b7b63",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "japon" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "2c604a6c-f253-3d40-9aaf-9e131a0f6fe4",
+        "name" : "Filtrer Japan",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 9
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "6f695a07-c916-321f-a5a0-adaa8122a4ff",
         "name" : "Motif : schema",
         "type" : "PROCESSOR"
@@ -400,6 +460,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "6f695a07-c916-321f-a5a0-adaa8122a4ff",
+        "name" : "Motif : schema",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "a7d43cfb-79ce-3de0-87a9-de5d35bfdeca",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "2c604a6c-f253-3d40-9aaf-9e131a0f6fe4",
+        "name" : "Filtrer Japan",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 8
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -458,6 +548,36 @@
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "2c604a6c-f253-3d40-9aaf-9e131a0f6fe4",
+        "name" : "Filtrer Japan",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d9433293-604c-3b08-9b8e-830dd3bb1421",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "valid" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "425ebef1-e268-3cd3-a0d6-266cb065139f",
+        "name" : "Valider le schéma",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 7
     }, {
       "backPressureDataSizeThreshold" : "1 GB",
       "backPressureObjectThreshold" : 10000,
@@ -1790,6 +1910,89 @@
       "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
       "yieldDuration" : "1 sec"
     }, {
+      "autoTerminatedRelationships" : [ "original" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.5.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "2c604a6c-f253-3d40-9aaf-9e131a0f6fe4",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "Filtrer Japan",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1304.0,
+        "y" : 288.0
+      },
+      "properties" : {
+        "dbf-default-precision" : "10",
+        "record-writer" : "5b6390a5-0656-382c-a2e7-79bc259256ee",
+        "record-reader" : "d89b9318-0b76-3daa-a16c-72729c17c4ef",
+        "include-zero-record-flowfiles" : "true",
+        "japon" : "SELECT * FROM FLOWFILE WHERE Origin = 'Japan'",
+        "dbf-default-scale" : "0"
+      },
+      "propertyDescriptors" : {
+        "dbf-default-precision" : {
+          "displayName" : "Default Decimal Precision",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbf-default-precision",
+          "sensitive" : false
+        },
+        "record-writer" : {
+          "displayName" : "Record Writer",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "record-writer",
+          "sensitive" : false
+        },
+        "record-reader" : {
+          "displayName" : "Record Reader",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "record-reader",
+          "sensitive" : false
+        },
+        "include-zero-record-flowfiles" : {
+          "displayName" : "Include Zero Record FlowFiles",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "include-zero-record-flowfiles",
+          "sensitive" : false
+        },
+        "japon" : {
+          "displayName" : "japon",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "japon",
+          "sensitive" : false
+        },
+        "dbf-default-scale" : {
+          "displayName" : "Default Decimal Scale",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbf-default-scale",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.QueryRecord",
+      "yieldDuration" : "1 sec"
+    }, {
       "autoTerminatedRelationships" : [ "success" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
@@ -2104,8 +2307,8 @@
       "name" : "Motif : schema",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1500.0,
-        "y" : 660.0
+        "x" : 1504.0,
+        "y" : 656.0
       },
       "properties" : {
         "Store State" : "Do not store state",
@@ -3143,6 +3346,395 @@
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
       "groupIdentifier" : "flow-contents-group",
+      "identifier" : "d0080e0d-fa16-3059-b9c4-4e40dab52e4a",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "Clé objet Japan",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1952.0,
+        "y" : 176.0
+      },
+      "properties" : {
+        "cible" : "${source}/${partition}/japan/${filename:substringBeforeLast('.')}.parquet",
+        "Store State" : "Do not store state",
+        "canonical-value-lookup-cache-size" : "100"
+      },
+      "propertyDescriptors" : {
+        "cible" : {
+          "displayName" : "cible",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "cible",
+          "sensitive" : false
+        },
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "canonical-value-lookup-cache-size" : {
+          "displayName" : "Cache Value Lookup Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canonical-value-lookup-cache-size",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure", "success" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-aws-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.5.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "dfdb5ad8-01a1-1000-7d90-1bddc2f1bc39",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "Déposer Japan dans MinIO",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1608.0,
+        "y" : -128.0
+      },
+      "properties" : {
+        "FullControl User List" : "${s3.permissions.full.users}",
+        "Owner" : "${s3.owner}",
+        "Resource Transfer Source" : "FLOWFILE_CONTENT",
+        "s3-object-remove-tags-prefix" : "false",
+        "Endpoint Override URL" : "http://localhost:9000",
+        "Multipart Upload Max Age Threshold" : "7 days",
+        "canned-acl" : "${s3.permissions.cannedacl}",
+        "Signer Override" : "Default Signature",
+        "server-side-encryption" : "None",
+        "Write ACL User List" : "${s3.permissions.writeacl.users}",
+        "Read ACL User List" : "${s3.permissions.readacl.users}",
+        "Storage Class" : "Standard",
+        "Multipart Part Size" : "5 GB",
+        "use-chunked-encoding" : "true",
+        "Object Key" : "${cible}",
+        "AWS Credentials Provider service" : "83a74183-e87c-3ec2-bcac-1ef09624dbe9",
+        "Multipart Threshold" : "5 GB",
+        "Bucket" : "#{bucket}",
+        "Multipart Upload AgeOff Interval" : "60 min",
+        "use-path-style-access" : "true",
+        "Write Permission User List" : "${s3.permissions.write.users}",
+        "Communications Timeout" : "30 secs",
+        "Region" : "us-east-1",
+        "Read Permission User List" : "${s3.permissions.read.users}",
+        "s3-temporary-directory-multipart" : "${java.io.tmpdir}"
+      },
+      "propertyDescriptors" : {
+        "FullControl User List" : {
+          "displayName" : "FullControl User List",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "FullControl User List",
+          "sensitive" : false
+        },
+        "Owner" : {
+          "displayName" : "Owner",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Owner",
+          "sensitive" : false
+        },
+        "proxy-configuration-service" : {
+          "displayName" : "Proxy Configuration Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "proxy-configuration-service",
+          "sensitive" : false
+        },
+        "Resource Transfer Source" : {
+          "displayName" : "Resource Transfer Source",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Resource Transfer Source",
+          "sensitive" : false
+        },
+        "Cache Control" : {
+          "displayName" : "Cache Control",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Cache Control",
+          "sensitive" : false
+        },
+        "s3-object-remove-tags-prefix" : {
+          "displayName" : "Remove Tag Prefix",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "s3-object-remove-tags-prefix",
+          "sensitive" : false
+        },
+        "Endpoint Override URL" : {
+          "displayName" : "Endpoint Override URL",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Endpoint Override URL",
+          "sensitive" : false
+        },
+        "File Resource Service" : {
+          "displayName" : "File Resource Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "File Resource Service",
+          "sensitive" : false
+        },
+        "Multipart Upload Max Age Threshold" : {
+          "displayName" : "Multipart Upload Max Age Threshold",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Multipart Upload Max Age Threshold",
+          "sensitive" : false
+        },
+        "custom-signer-class-name" : {
+          "displayName" : "Custom Signer Class Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "custom-signer-class-name",
+          "sensitive" : false
+        },
+        "canned-acl" : {
+          "displayName" : "Canned ACL",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "canned-acl",
+          "sensitive" : false
+        },
+        "custom-signer-module-location" : {
+          "displayName" : "Custom Signer Module Location",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "custom-signer-module-location",
+          "resourceDefinition" : {
+            "cardinality" : "MULTIPLE",
+            "resourceTypes" : [ "DIRECTORY", "FILE" ]
+          },
+          "sensitive" : false
+        },
+        "Signer Override" : {
+          "displayName" : "Signer Override",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Signer Override",
+          "sensitive" : false
+        },
+        "Content Type" : {
+          "displayName" : "Content Type",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Content Type",
+          "sensitive" : false
+        },
+        "server-side-encryption" : {
+          "displayName" : "Server Side Encryption",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "server-side-encryption",
+          "sensitive" : false
+        },
+        "Write ACL User List" : {
+          "displayName" : "Write ACL User List",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Write ACL User List",
+          "sensitive" : false
+        },
+        "encryption-service" : {
+          "displayName" : "Encryption Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "encryption-service",
+          "sensitive" : false
+        },
+        "Read ACL User List" : {
+          "displayName" : "Read ACL User List",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Read ACL User List",
+          "sensitive" : false
+        },
+        "Content Disposition" : {
+          "displayName" : "Content Disposition",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Content Disposition",
+          "sensitive" : false
+        },
+        "Storage Class" : {
+          "displayName" : "Storage Class",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Storage Class",
+          "sensitive" : false
+        },
+        "Multipart Part Size" : {
+          "displayName" : "Multipart Part Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Multipart Part Size",
+          "sensitive" : false
+        },
+        "use-chunked-encoding" : {
+          "displayName" : "Use Chunked Encoding",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "use-chunked-encoding",
+          "sensitive" : false
+        },
+        "Object Key" : {
+          "displayName" : "Object Key",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Object Key",
+          "sensitive" : false
+        },
+        "AWS Credentials Provider service" : {
+          "displayName" : "AWS Credentials Provider Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "AWS Credentials Provider service",
+          "sensitive" : false
+        },
+        "Multipart Threshold" : {
+          "displayName" : "Multipart Threshold",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Multipart Threshold",
+          "sensitive" : false
+        },
+        "s3-object-tags-prefix" : {
+          "displayName" : "Object Tags Prefix",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "s3-object-tags-prefix",
+          "sensitive" : false
+        },
+        "SSL Context Service" : {
+          "displayName" : "SSL Context Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "SSL Context Service",
+          "sensitive" : false
+        },
+        "Bucket" : {
+          "displayName" : "Bucket",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Bucket",
+          "sensitive" : false
+        },
+        "Multipart Upload AgeOff Interval" : {
+          "displayName" : "Multipart Upload AgeOff Interval",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Multipart Upload AgeOff Interval",
+          "sensitive" : false
+        },
+        "use-path-style-access" : {
+          "displayName" : "Use Path Style Access",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "use-path-style-access",
+          "sensitive" : false
+        },
+        "Write Permission User List" : {
+          "displayName" : "Write Permission User List",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Write Permission User List",
+          "sensitive" : false
+        },
+        "Communications Timeout" : {
+          "displayName" : "Communications Timeout",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Communications Timeout",
+          "sensitive" : false
+        },
+        "Region" : {
+          "displayName" : "Region",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Region",
+          "sensitive" : false
+        },
+        "Read Permission User List" : {
+          "displayName" : "Read Permission User List",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Read Permission User List",
+          "sensitive" : false
+        },
+        "Expiration Time Rule" : {
+          "displayName" : "Expiration Time Rule",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Expiration Time Rule",
+          "sensitive" : false
+        },
+        "s3-temporary-directory-multipart" : {
+          "displayName" : "Temporary Directory Multipart State",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "s3-temporary-directory-multipart",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ "failure" ],
+      "retryCount" : 10,
+      "runDurationMillis" : 0,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.aws.s3.PutS3Object",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.5.0"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
       "identifier" : "fe57e72a-5750-30ce-b9fb-d2d3508b145b",
       "maxBackoffPeriod" : "10 mins",
       "name" : "Motif : cible_injoignable",
@@ -3254,6 +3846,6 @@
   "snapshotMetadata" : {
     "author" : "a7ea6846-2b68-45c0-97fb-5dd47fc7b72e",
     "flowIdentifier" : "ingestion-cars",
-    "timestamp" : 1794508133666
+    "timestamp" : 1794757577996
   }
 }
